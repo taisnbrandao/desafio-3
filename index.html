@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="background">
+        <img src="imagens/Ilustration.png" alt="Logo Principal" class="login-image">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="userId">ID de Usuário</label>
+                    <input type="text" id="userId" name="userId" placeholder="Digite seu ID">
+                    <span class="error-message" id="userIdError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn login-btn">Entrar</button>
+                    <button type="button" class="btn register-btn" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <img src="imagens/logo-trilhas-inova.png" alt="Logo Secundária" class="login-image">
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
